@@ -147,7 +147,7 @@ const loadEditProfile = async (req, res) => {
 
         const profile = await adminLoginModel.findById(id);
 
-        return res.render("editprofile", { profile, IMAGE_URL: process.env.IMAGE_URL });
+        return res.render("editProfile", { profile, IMAGE_URL: process.env.IMAGE_URL });
 
     } catch (error) {
         console.log(error.message);
